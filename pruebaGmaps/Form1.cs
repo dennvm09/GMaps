@@ -50,7 +50,10 @@ namespace pruebaGmaps
             markerOverlay.Markers.Add(marker);
 
             marker.ToolTipMode = MarkerTooltipMode.Always;
-            marker.ToolTipText = string.Format("Ubicación: \nLatitud:{0} \nLongitud:{")
+            marker.ToolTipText = string.Format("Ubicación: \n Latitud:{0} \n Longitud:{1}", LatInicial, LonInicial);
+
+            gMapControl1.Overlays.Add(markerOverlay);
+
 
         }
     }
