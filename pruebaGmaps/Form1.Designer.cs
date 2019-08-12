@@ -42,13 +42,13 @@
             this.rbtOpcion2 = new System.Windows.Forms.RadioButton();
             this.rbtOpcion3 = new System.Windows.Forms.RadioButton();
             this.paneOpcion1 = new System.Windows.Forms.Panel();
+            this.btMostrar1 = new System.Windows.Forms.Button();
             this.paneOpcion2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rbtMujeres = new System.Windows.Forms.RadioButton();
+            this.rbtHombres = new System.Windows.Forms.RadioButton();
             this.paneOpcion3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.btMostrar1 = new System.Windows.Forms.Button();
-            this.rbtHombres = new System.Windows.Forms.RadioButton();
-            this.rbtMujeres = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.paneOpcion1.SuspendLayout();
             this.paneOpcion2.SuspendLayout();
             this.paneOpcion3.SuspendLayout();
@@ -179,10 +179,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Adobe Heiti Std R", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(526, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(257, 20);
+            this.label3.Size = new System.Drawing.Size(288, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "HOMICIDIOS EN COLOMBIA 2018";
             this.label3.Click += new System.EventHandler(this.Label3_Click);
@@ -249,6 +249,15 @@
             this.paneOpcion1.Visible = false;
             this.paneOpcion1.Paint += new System.Windows.Forms.PaintEventHandler(this.PaneOpcion1_Paint);
             // 
+            // btMostrar1
+            // 
+            this.btMostrar1.Location = new System.Drawing.Point(194, 30);
+            this.btMostrar1.Name = "btMostrar1";
+            this.btMostrar1.Size = new System.Drawing.Size(75, 23);
+            this.btMostrar1.TabIndex = 7;
+            this.btMostrar1.Text = "Mostrar";
+            this.btMostrar1.UseVisualStyleBackColor = true;
+            // 
             // paneOpcion2
             // 
             this.paneOpcion2.Controls.Add(this.label5);
@@ -259,6 +268,41 @@
             this.paneOpcion2.Size = new System.Drawing.Size(286, 100);
             this.paneOpcion2.TabIndex = 14;
             this.paneOpcion2.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Departamentos:";
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
+            // 
+            // rbtMujeres
+            // 
+            this.rbtMujeres.AutoSize = true;
+            this.rbtMujeres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbtMujeres.Location = new System.Drawing.Point(105, 41);
+            this.rbtMujeres.Name = "rbtMujeres";
+            this.rbtMujeres.Size = new System.Drawing.Size(70, 19);
+            this.rbtMujeres.TabIndex = 1;
+            this.rbtMujeres.TabStop = true;
+            this.rbtMujeres.Text = "Mujeres";
+            this.rbtMujeres.UseVisualStyleBackColor = true;
+            // 
+            // rbtHombres
+            // 
+            this.rbtHombres.AutoSize = true;
+            this.rbtHombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbtHombres.Location = new System.Drawing.Point(17, 41);
+            this.rbtHombres.Name = "rbtHombres";
+            this.rbtHombres.Size = new System.Drawing.Size(76, 19);
+            this.rbtHombres.TabIndex = 0;
+            this.rbtHombres.TabStop = true;
+            this.rbtHombres.Text = "Hombres";
+            this.rbtHombres.UseVisualStyleBackColor = true;
             // 
             // paneOpcion3
             // 
@@ -278,57 +322,13 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "opción 3";
             // 
-            // btMostrar1
-            // 
-            this.btMostrar1.Location = new System.Drawing.Point(194, 30);
-            this.btMostrar1.Name = "btMostrar1";
-            this.btMostrar1.Size = new System.Drawing.Size(75, 23);
-            this.btMostrar1.TabIndex = 7;
-            this.btMostrar1.Text = "Mostrar";
-            this.btMostrar1.UseVisualStyleBackColor = true;
-            // 
-            // rbtHombres
-            // 
-            this.rbtHombres.AutoSize = true;
-            this.rbtHombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rbtHombres.Location = new System.Drawing.Point(17, 41);
-            this.rbtHombres.Name = "rbtHombres";
-            this.rbtHombres.Size = new System.Drawing.Size(76, 19);
-            this.rbtHombres.TabIndex = 0;
-            this.rbtHombres.TabStop = true;
-            this.rbtHombres.Text = "Hombres";
-            this.rbtHombres.UseVisualStyleBackColor = true;
-            // 
-            // rbtMujeres
-            // 
-            this.rbtMujeres.AutoSize = true;
-            this.rbtMujeres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rbtMujeres.Location = new System.Drawing.Point(105, 41);
-            this.rbtMujeres.Name = "rbtMujeres";
-            this.rbtMujeres.Size = new System.Drawing.Size(70, 19);
-            this.rbtMujeres.TabIndex = 1;
-            this.rbtMujeres.TabStop = true;
-            this.rbtMujeres.Text = "Mujeres";
-            this.rbtMujeres.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Departamentos:";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 504);
+            this.ClientSize = new System.Drawing.Size(826, 504);
             this.Controls.Add(this.paneOpcion3);
             this.Controls.Add(this.paneOpcion2);
             this.Controls.Add(this.paneOpcion1);

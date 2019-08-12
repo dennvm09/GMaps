@@ -48,3 +48,28 @@ C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj
 C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CopyComplete
 C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.exe
 C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.pdb
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\pruebaGmaps.exe.config
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\pruebaGmaps.exe
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\pruebaGmaps.pdb
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\EntityFramework.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\GMap.NET.Core.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\Newtonsoft.Json.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\EntityFramework.xml
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\Newtonsoft.Json.xml
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.xml
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csprojAssemblyReference.cache
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.Form1.resources
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.Properties.Resources.resources
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.GenerateResource.cache
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CoreCompileInputs.cache
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CopyComplete
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.exe
+C:\Users\junior\Source\Repos\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.pdb
