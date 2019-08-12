@@ -23,3 +23,28 @@ C:\Users\1006168982\Documents\pruebaGmaps\pruebaGmaps\obj\Debug\pruebaGmaps.cspr
 C:\Users\1006168982\Documents\pruebaGmaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CopyComplete
 C:\Users\1006168982\Documents\pruebaGmaps\pruebaGmaps\obj\Debug\pruebaGmaps.exe
 C:\Users\1006168982\Documents\pruebaGmaps\pruebaGmaps\obj\Debug\pruebaGmaps.pdb
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\pruebaGmaps.exe.config
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\pruebaGmaps.exe
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\pruebaGmaps.pdb
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\EntityFramework.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\GMap.NET.Core.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\Newtonsoft.Json.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\EntityFramework.xml
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\Newtonsoft.Json.xml
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.xml
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.Form1.resources
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.Properties.Resources.resources
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.GenerateResource.cache
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CopyComplete
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.exe
+C:\Users\usuario\Documents\Universidad\Proyecto Integrador\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.pdb
