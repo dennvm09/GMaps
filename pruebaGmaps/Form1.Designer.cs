@@ -30,12 +30,8 @@
         {
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.txt1 = new System.Windows.Forms.TextBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
-            this.btmostrar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxDeptos1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rbtOpcion1 = new System.Windows.Forms.RadioButton();
@@ -44,11 +40,21 @@
             this.paneOpcion1 = new System.Windows.Forms.Panel();
             this.btMostrar1 = new System.Windows.Forms.Button();
             this.paneOpcion2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbxDeptos2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btMostrar2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.rbtMujeres = new System.Windows.Forms.RadioButton();
             this.rbtHombres = new System.Windows.Forms.RadioButton();
             this.paneOpcion3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.rbtArma1 = new System.Windows.Forms.RadioButton();
+            this.rbtArma2 = new System.Windows.Forms.RadioButton();
+            this.btMostrar3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbxDeptos3 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.paneOpcion1.SuspendLayout();
             this.paneOpcion2.SuspendLayout();
             this.paneOpcion3.SuspendLayout();
@@ -90,27 +96,10 @@
             this.txt1.TabIndex = 1;
             this.txt1.TextChanged += new System.EventHandler(this.Txt1_TextChanged);
             // 
-            // txt2
+            // cbxDeptos1
             // 
-            this.txt2.Location = new System.Drawing.Point(26, 448);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(206, 20);
-            this.txt2.TabIndex = 2;
-            this.txt2.TextChanged += new System.EventHandler(this.Txt2_TextChanged);
-            // 
-            // btmostrar
-            // 
-            this.btmostrar.Location = new System.Drawing.Point(82, 469);
-            this.btmostrar.Name = "btmostrar";
-            this.btmostrar.Size = new System.Drawing.Size(75, 23);
-            this.btmostrar.TabIndex = 3;
-            this.btmostrar.Text = "mostrar";
-            this.btmostrar.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxDeptos1.FormattingEnabled = true;
+            this.cbxDeptos1.Items.AddRange(new object[] {
             "Amazonas",
             "Antioquia",
             "Arauca",
@@ -144,19 +133,11 @@
             "Valle del Cauca",
             "Vaupés",
             "Vichada"});
-            this.comboBox1.Location = new System.Drawing.Point(16, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(562, 455);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(185, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cbxDeptos1.Location = new System.Drawing.Point(16, 32);
+            this.cbxDeptos1.Name = "cbxDeptos1";
+            this.cbxDeptos1.Size = new System.Drawing.Size(162, 21);
+            this.cbxDeptos1.TabIndex = 4;
+            this.cbxDeptos1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -167,15 +148,6 @@
             this.label1.Size = new System.Drawing.Size(109, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Departamentos:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(562, 439);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Municipios:";
             // 
             // label3
             // 
@@ -241,7 +213,7 @@
             // paneOpcion1
             // 
             this.paneOpcion1.Controls.Add(this.btMostrar1);
-            this.paneOpcion1.Controls.Add(this.comboBox1);
+            this.paneOpcion1.Controls.Add(this.cbxDeptos1);
             this.paneOpcion1.Controls.Add(this.label1);
             this.paneOpcion1.Location = new System.Drawing.Point(513, 164);
             this.paneOpcion1.Name = "paneOpcion1";
@@ -258,34 +230,111 @@
             this.btMostrar1.TabIndex = 7;
             this.btMostrar1.Text = "Mostrar";
             this.btMostrar1.UseVisualStyleBackColor = true;
+            this.btMostrar1.Click += new System.EventHandler(this.BtMostrar1_Click);
             // 
             // paneOpcion2
             // 
+            this.paneOpcion2.Controls.Add(this.label8);
+            this.paneOpcion2.Controls.Add(this.cbxDeptos2);
+            this.paneOpcion2.Controls.Add(this.label6);
+            this.paneOpcion2.Controls.Add(this.btMostrar2);
             this.paneOpcion2.Controls.Add(this.label5);
             this.paneOpcion2.Controls.Add(this.rbtMujeres);
             this.paneOpcion2.Controls.Add(this.rbtHombres);
-            this.paneOpcion2.Location = new System.Drawing.Point(513, 237);
+            this.paneOpcion2.Location = new System.Drawing.Point(513, 164);
             this.paneOpcion2.Name = "paneOpcion2";
-            this.paneOpcion2.Size = new System.Drawing.Size(286, 100);
+            this.paneOpcion2.Size = new System.Drawing.Size(312, 142);
             this.paneOpcion2.TabIndex = 14;
             this.paneOpcion2.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(14, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 15);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Departamentos:";
+            // 
+            // cbxDeptos2
+            // 
+            this.cbxDeptos2.FormattingEnabled = true;
+            this.cbxDeptos2.Items.AddRange(new object[] {
+            "Amazonas",
+            "Antioquia",
+            "Arauca",
+            "Atlántico",
+            "Bogotá",
+            "Bolívar",
+            "Boyacá",
+            "Caldas",
+            "Caquetá",
+            "Casanare",
+            "Cauca",
+            "Cesar",
+            "Chocó",
+            "Córdoba",
+            "Cundinamarca",
+            "Guainía",
+            "Guaviare",
+            "Huila",
+            "La Guajira",
+            "Magdalena",
+            "Meta",
+            "Nariño",
+            "Norte de Santander",
+            "Putumayo",
+            "Quindío",
+            "Risaralda",
+            "San Andrés y Providencia",
+            "Santander",
+            "Sucre",
+            "Tolima",
+            "Valle del Cauca",
+            "Vaupés",
+            "Vichada"});
+            this.cbxDeptos2.Location = new System.Drawing.Point(15, 105);
+            this.cbxDeptos2.Name = "cbxDeptos2";
+            this.cbxDeptos2.Size = new System.Drawing.Size(162, 21);
+            this.cbxDeptos2.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(7, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(272, 26);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Si desea conocer los homicidios según el departamento \r\ny género...";
+            // 
+            // btMostrar2
+            // 
+            this.btMostrar2.Location = new System.Drawing.Point(194, 25);
+            this.btMostrar2.Name = "btMostrar2";
+            this.btMostrar2.Size = new System.Drawing.Size(75, 23);
+            this.btMostrar2.TabIndex = 8;
+            this.btMostrar2.Text = "Mostrar";
+            this.btMostrar2.UseVisualStyleBackColor = true;
+            this.btMostrar2.Click += new System.EventHandler(this.BtMostrar2_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 14);
+            this.label5.Location = new System.Drawing.Point(14, 8);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 15);
+            this.label5.Size = new System.Drawing.Size(58, 15);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Departamentos:";
+            this.label5.Text = "Género:";
             this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // rbtMujeres
             // 
             this.rbtMujeres.AutoSize = true;
             this.rbtMujeres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rbtMujeres.Location = new System.Drawing.Point(105, 41);
+            this.rbtMujeres.Location = new System.Drawing.Point(105, 26);
             this.rbtMujeres.Name = "rbtMujeres";
             this.rbtMujeres.Size = new System.Drawing.Size(70, 19);
             this.rbtMujeres.TabIndex = 1;
@@ -297,7 +346,7 @@
             // 
             this.rbtHombres.AutoSize = true;
             this.rbtHombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.rbtHombres.Location = new System.Drawing.Point(17, 41);
+            this.rbtHombres.Location = new System.Drawing.Point(17, 26);
             this.rbtHombres.Name = "rbtHombres";
             this.rbtHombres.Size = new System.Drawing.Size(76, 19);
             this.rbtHombres.TabIndex = 0;
@@ -307,21 +356,124 @@
             // 
             // paneOpcion3
             // 
+            this.paneOpcion3.Controls.Add(this.label2);
+            this.paneOpcion3.Controls.Add(this.cbxDeptos3);
+            this.paneOpcion3.Controls.Add(this.label9);
+            this.paneOpcion3.Controls.Add(this.btMostrar3);
+            this.paneOpcion3.Controls.Add(this.rbtArma2);
+            this.paneOpcion3.Controls.Add(this.rbtArma1);
             this.paneOpcion3.Controls.Add(this.label7);
-            this.paneOpcion3.Location = new System.Drawing.Point(327, 414);
+            this.paneOpcion3.Location = new System.Drawing.Point(513, 164);
             this.paneOpcion3.Name = "paneOpcion3";
-            this.paneOpcion3.Size = new System.Drawing.Size(286, 100);
+            this.paneOpcion3.Size = new System.Drawing.Size(312, 147);
             this.paneOpcion3.TabIndex = 15;
             this.paneOpcion3.Visible = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 19);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "opción 3";
+            this.label7.Size = new System.Drawing.Size(96, 15);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Tipo de arma:";
+            // 
+            // rbtArma1
+            // 
+            this.rbtArma1.AutoSize = true;
+            this.rbtArma1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtArma1.Location = new System.Drawing.Point(16, 27);
+            this.rbtArma1.Name = "rbtArma1";
+            this.rbtArma1.Size = new System.Drawing.Size(94, 19);
+            this.rbtArma1.TabIndex = 16;
+            this.rbtArma1.TabStop = true;
+            this.rbtArma1.Text = "Arma blanca";
+            this.rbtArma1.UseVisualStyleBackColor = true;
+            // 
+            // rbtArma2
+            // 
+            this.rbtArma2.AutoSize = true;
+            this.rbtArma2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtArma2.Location = new System.Drawing.Point(116, 27);
+            this.rbtArma2.Name = "rbtArma2";
+            this.rbtArma2.Size = new System.Drawing.Size(105, 19);
+            this.rbtArma2.TabIndex = 17;
+            this.rbtArma2.TabStop = true;
+            this.rbtArma2.Text = "Arma de fuego";
+            this.rbtArma2.UseVisualStyleBackColor = true;
+            // 
+            // btMostrar3
+            // 
+            this.btMostrar3.Location = new System.Drawing.Point(228, 27);
+            this.btMostrar3.Name = "btMostrar3";
+            this.btMostrar3.Size = new System.Drawing.Size(75, 23);
+            this.btMostrar3.TabIndex = 11;
+            this.btMostrar3.Text = "Mostrar";
+            this.btMostrar3.UseVisualStyleBackColor = true;
+            this.btMostrar3.Click += new System.EventHandler(this.BtMostrar3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 15);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Departamentos:";
+            // 
+            // cbxDeptos3
+            // 
+            this.cbxDeptos3.FormattingEnabled = true;
+            this.cbxDeptos3.Items.AddRange(new object[] {
+            "Amazonas",
+            "Antioquia",
+            "Arauca",
+            "Atlántico",
+            "Bogotá",
+            "Bolívar",
+            "Boyacá",
+            "Caldas",
+            "Caquetá",
+            "Casanare",
+            "Cauca",
+            "Cesar",
+            "Chocó",
+            "Córdoba",
+            "Cundinamarca",
+            "Guainía",
+            "Guaviare",
+            "Huila",
+            "La Guajira",
+            "Magdalena",
+            "Meta",
+            "Nariño",
+            "Norte de Santander",
+            "Putumayo",
+            "Quindío",
+            "Risaralda",
+            "San Andrés y Providencia",
+            "Santander",
+            "Sucre",
+            "Tolima",
+            "Valle del Cauca",
+            "Vaupés",
+            "Vichada"});
+            this.cbxDeptos3.Location = new System.Drawing.Point(14, 108);
+            this.cbxDeptos3.Name = "cbxDeptos3";
+            this.cbxDeptos3.Size = new System.Drawing.Size(162, 21);
+            this.cbxDeptos3.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 55);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(272, 26);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Si desea conocer los homicidios según el departamento \r\ny género...";
             // 
             // Form1
             // 
@@ -338,10 +490,6 @@
             this.Controls.Add(this.rbtOpcion1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.btmostrar);
-            this.Controls.Add(this.txt2);
             this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.txt1);
             this.Name = "Form1";
@@ -362,12 +510,8 @@
 
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.TextBox txt1;
-        private System.Windows.Forms.TextBox txt2;
-        private System.Windows.Forms.Button btmostrar;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxDeptos1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbtOpcion1;
@@ -376,11 +520,21 @@
         private System.Windows.Forms.Panel paneOpcion1;
         private System.Windows.Forms.Panel paneOpcion2;
         private System.Windows.Forms.Panel paneOpcion3;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btMostrar1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton rbtMujeres;
         private System.Windows.Forms.RadioButton rbtHombres;
+        private System.Windows.Forms.ComboBox cbxDeptos2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btMostrar2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btMostrar3;
+        private System.Windows.Forms.RadioButton rbtArma2;
+        private System.Windows.Forms.RadioButton rbtArma1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbxDeptos3;
+        private System.Windows.Forms.Label label9;
     }
 }
 

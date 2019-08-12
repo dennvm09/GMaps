@@ -119,5 +119,31 @@ namespace pruebaGmaps
         {
 
         }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btmostrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtMostrar3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtMostrar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtMostrar1_Click(object sender, EventArgs e)
+        {
+            gMapControl1.SetPositionByKeywords("Medellín, Colombia");
+            //no funciona jeje
+        }
     }
 }
