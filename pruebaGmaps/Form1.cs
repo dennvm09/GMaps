@@ -114,5 +114,10 @@ namespace pruebaGmaps
         {
 
         }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

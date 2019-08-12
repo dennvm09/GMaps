@@ -137,7 +137,7 @@
             "Putumayo",
             "Quindío",
             "Risaralda",
-            "San Adnrés y Providencia",
+            "San Andrés y Providencia",
             "Santander",
             "Sucre",
             "Tolima",
@@ -148,6 +148,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 21);
             this.comboBox1.TabIndex = 4;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
