@@ -1,0 +1,9 @@
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\bin\Debug\netstandard2.0\Modelo.deps.json
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\bin\Debug\netstandard2.0\Modelo.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\bin\Debug\netstandard2.0\Modelo.pdb
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\obj\Debug\netstandard2.0\Modelo.csprojAssemblyReference.cache
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\obj\Debug\netstandard2.0\Modelo.csproj.CoreCompileInputs.cache
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfoInputs.cache
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfo.cs
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\obj\Debug\netstandard2.0\Modelo.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\Modelo\obj\Debug\netstandard2.0\Modelo.pdb

@@ -8,10 +8,13 @@ namespace Modelo
     public class Principal
     {
         private List<Department> listDepartments;
+        private Department departamento;
       
+
         public Principal()
         {
             listDepartments = new List<Department>();
+            departamento = null; 
         }
 
         public List<Department> ListDepartments { get => listDepartments; set => listDepartments = value; }
@@ -171,6 +174,82 @@ namespace Modelo
                 Console.WriteLine(total);
             }
             return total;
+        }
+
+        public int generoDepartment(int genero, String departamentoB)
+        {
+            int total = 0;
+            BusquedaDepartments(listDepartments, departamentoB);
+            if (genero == 1)
+            {   
+                total = departamento.numeroH();
+            }else if (genero == 2)
+            {
+                total = departamento.numeroM();
+            }
+
+            return total;
+        }
+
+        public int ArmaDepartments(int tipoArama, String departamentoB)
+        {
+            int total = 0;
+            BusquedaDepartments(listDepartments, departamentoB);
+            if (tipoArama == 1)
+            {
+                total = departamento.armaBlanca();
+            }
+            ///arma de fuego = 2
+            else if (tipoArama == 2)
+            {
+                total = departamento.armaFuego();
+            }
+            return total;
+        }
+
+        public int edadDepartment(int edad, String departamentoB)
+        {
+            int total = 0;
+            BusquedaDepartments(listDepartments, departamentoB);
+            if (edad == 1)
+            {
+                total = departamento.adult();
+            }
+            /// niños
+            else if (edad == 2)
+            {
+                total = departamento.kids();
+            }
+
+            return total;
+        }
+
+        public void BusquedaDepartments(List<Department> depas, String buscarS)
+        {
+            int izq, der, centro;
+            izq = 0;
+            der = depas.Count - 1;
+            centro = (izq + der) / 2;
+
+            while (buscarS != depas[centro].NameD && izq < der) {
+                int comparacion = buscarS.CompareTo(depas[centro].NameD);
+                if (comparacion > 0) {
+                    izq = centro + 1;
+                }else if (comparacion < 0)
+                {
+                    der = centro - 1;
+                }
+                centro = (izq + der) / 2;
+            }
+            if (buscarS == depas[centro].NameD)
+            {
+                departamento = depas[centro];
+            }
+            else {
+                Console.WriteLine("Departamento no encontrado");
+            }
+         
+
         }
 
 

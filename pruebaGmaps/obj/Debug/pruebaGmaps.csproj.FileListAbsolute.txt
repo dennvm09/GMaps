@@ -98,3 +98,30 @@ C:\Users\1006168982\Desktop\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CoreC
 C:\Users\1006168982\Desktop\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CopyComplete
 C:\Users\1006168982\Desktop\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.exe
 C:\Users\1006168982\Desktop\GMaps\pruebaGmaps\obj\Debug\pruebaGmaps.pdb
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\pruebaGmaps.exe.config
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\pruebaGmaps.exe
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\pruebaGmaps.pdb
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\EntityFramework.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\EntityFramework.SqlServer.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\GMap.NET.Core.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\GMap.NET.WindowsPresentation.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\Modelo.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\Newtonsoft.Json.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\System.Data.SQLite.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\Modelo.pdb
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\EntityFramework.xml
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\EntityFramework.SqlServer.xml
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\Newtonsoft.Json.xml
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\System.Data.SQLite.xml
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\bin\Debug\System.Data.SQLite.dll.config
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.csprojAssemblyReference.cache
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.Form1.resources
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.Properties.Resources.resources
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.GenerateResource.cache
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CoreCompileInputs.cache
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.csproj.CopyComplete
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.exe
+D:\Archivos\Visual Studio\Reporte_Homicidios_Colombia_2018\pruebaGmaps\obj\Debug\pruebaGmaps.pdb
