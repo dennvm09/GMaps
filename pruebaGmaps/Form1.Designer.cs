@@ -48,13 +48,14 @@
             this.rbtMujeres = new System.Windows.Forms.RadioButton();
             this.rbtHombres = new System.Windows.Forms.RadioButton();
             this.paneOpcion3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rbtArma1 = new System.Windows.Forms.RadioButton();
-            this.rbtArma2 = new System.Windows.Forms.RadioButton();
-            this.btMostrar3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbxDeptos3 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btMostrar3 = new System.Windows.Forms.Button();
+            this.rbtArma2 = new System.Windows.Forms.RadioButton();
+            this.rbtArma1 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblMensajeTotal = new System.Windows.Forms.Label();
             this.paneOpcion1.SuspendLayout();
             this.paneOpcion2.SuspendLayout();
             this.paneOpcion3.SuspendLayout();
@@ -341,6 +342,7 @@
             this.rbtMujeres.TabStop = true;
             this.rbtMujeres.Text = "Mujeres";
             this.rbtMujeres.UseVisualStyleBackColor = true;
+            this.rbtMujeres.CheckedChanged += new System.EventHandler(this.RbtMujeres_CheckedChanged);
             // 
             // rbtHombres
             // 
@@ -353,6 +355,7 @@
             this.rbtHombres.TabStop = true;
             this.rbtHombres.Text = "Hombres";
             this.rbtHombres.UseVisualStyleBackColor = true;
+            this.rbtHombres.CheckedChanged += new System.EventHandler(this.RbtHombres_CheckedChanged);
             // 
             // paneOpcion3
             // 
@@ -368,50 +371,6 @@
             this.paneOpcion3.Size = new System.Drawing.Size(312, 147);
             this.paneOpcion3.TabIndex = 15;
             this.paneOpcion3.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 15);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Tipo de arma:";
-            // 
-            // rbtArma1
-            // 
-            this.rbtArma1.AutoSize = true;
-            this.rbtArma1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtArma1.Location = new System.Drawing.Point(16, 27);
-            this.rbtArma1.Name = "rbtArma1";
-            this.rbtArma1.Size = new System.Drawing.Size(94, 19);
-            this.rbtArma1.TabIndex = 16;
-            this.rbtArma1.TabStop = true;
-            this.rbtArma1.Text = "Arma blanca";
-            this.rbtArma1.UseVisualStyleBackColor = true;
-            // 
-            // rbtArma2
-            // 
-            this.rbtArma2.AutoSize = true;
-            this.rbtArma2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtArma2.Location = new System.Drawing.Point(116, 27);
-            this.rbtArma2.Name = "rbtArma2";
-            this.rbtArma2.Size = new System.Drawing.Size(105, 19);
-            this.rbtArma2.TabIndex = 17;
-            this.rbtArma2.TabStop = true;
-            this.rbtArma2.Text = "Arma de fuego";
-            this.rbtArma2.UseVisualStyleBackColor = true;
-            // 
-            // btMostrar3
-            // 
-            this.btMostrar3.Location = new System.Drawing.Point(228, 27);
-            this.btMostrar3.Name = "btMostrar3";
-            this.btMostrar3.Size = new System.Drawing.Size(75, 23);
-            this.btMostrar3.TabIndex = 11;
-            this.btMostrar3.Text = "Mostrar";
-            this.btMostrar3.UseVisualStyleBackColor = true;
-            this.btMostrar3.Click += new System.EventHandler(this.BtMostrar3_Click);
             // 
             // label2
             // 
@@ -475,6 +434,62 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Si desea conocer los homicidios según el departamento \r\ny género...";
             // 
+            // btMostrar3
+            // 
+            this.btMostrar3.Location = new System.Drawing.Point(228, 27);
+            this.btMostrar3.Name = "btMostrar3";
+            this.btMostrar3.Size = new System.Drawing.Size(75, 23);
+            this.btMostrar3.TabIndex = 11;
+            this.btMostrar3.Text = "Mostrar";
+            this.btMostrar3.UseVisualStyleBackColor = true;
+            this.btMostrar3.Click += new System.EventHandler(this.BtMostrar3_Click);
+            // 
+            // rbtArma2
+            // 
+            this.rbtArma2.AutoSize = true;
+            this.rbtArma2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtArma2.Location = new System.Drawing.Point(116, 27);
+            this.rbtArma2.Name = "rbtArma2";
+            this.rbtArma2.Size = new System.Drawing.Size(105, 19);
+            this.rbtArma2.TabIndex = 17;
+            this.rbtArma2.TabStop = true;
+            this.rbtArma2.Text = "Arma de fuego";
+            this.rbtArma2.UseVisualStyleBackColor = true;
+            this.rbtArma2.CheckedChanged += new System.EventHandler(this.RbtArma2_CheckedChanged);
+            // 
+            // rbtArma1
+            // 
+            this.rbtArma1.AutoSize = true;
+            this.rbtArma1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtArma1.Location = new System.Drawing.Point(16, 27);
+            this.rbtArma1.Name = "rbtArma1";
+            this.rbtArma1.Size = new System.Drawing.Size(94, 19);
+            this.rbtArma1.TabIndex = 16;
+            this.rbtArma1.TabStop = true;
+            this.rbtArma1.Text = "Arma blanca";
+            this.rbtArma1.UseVisualStyleBackColor = true;
+            this.rbtArma1.CheckedChanged += new System.EventHandler(this.RbtArma1_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 15);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Tipo de arma:";
+            // 
+            // lblMensajeTotal
+            // 
+            this.lblMensajeTotal.AutoSize = true;
+            this.lblMensajeTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensajeTotal.Location = new System.Drawing.Point(541, 364);
+            this.lblMensajeTotal.Name = "lblMensajeTotal";
+            this.lblMensajeTotal.Size = new System.Drawing.Size(63, 25);
+            this.lblMensajeTotal.TabIndex = 16;
+            this.lblMensajeTotal.Text = "label";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,6 +497,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(826, 504);
+            this.Controls.Add(this.lblMensajeTotal);
             this.Controls.Add(this.paneOpcion3);
             this.Controls.Add(this.paneOpcion2);
             this.Controls.Add(this.paneOpcion1);
@@ -535,6 +551,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbxDeptos3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblMensajeTotal;
     }
 }
 

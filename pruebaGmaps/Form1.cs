@@ -7,24 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modelo;
 
 using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 
+using System.IO;
+
 namespace pruebaGmaps
 {
     public partial class Form1 : Form
     {
+
+        Principal principal;
+
         GMarkerGoogle marker;
         GMapOverlay markerOverlay;
 
         double LatInicial = 4.570868;
         double LonInicial = -74.2973328;
+
+        int genero = 0;
+        int arma = 0;
         public Form1()
         {
             InitializeComponent();
+            principal = new Principal();
+            principal.addDepartamento();
         }
 
         private void GMapControl1_Load(object sender, EventArgs e)
@@ -43,6 +54,40 @@ namespace pruebaGmaps
             gMapControl1.MaxZoom = 24;
             gMapControl1.Zoom = 7;
             gMapControl1.AutoScroll = true;
+
+
+            //marcador
+            markerOverlay = new GMapOverlay("Marcador");
+
+
+            StreamReader leer = new StreamReader(Path.GetFullPath("Departamentos.txt"));
+            String linea = leer.ReadLine();
+            try
+            {
+                while (linea != null)
+                {
+                    String[] elementos;
+                    elementos = linea.Split(',');
+
+                    if (elementos != null && elementos.Length == 4)
+                    {
+                        Double Lat = double.Parse(elementos[2]);
+                        Double Lng = double.Parse(elementos[3]);
+
+                        marker = new GMarkerGoogle(new PointLatLng(Lat, Lng), GMarkerGoogleType.red);
+                        markerOverlay.Markers.Add(marker);
+
+                    }
+                }
+            }
+            catch (Exception a)
+            {
+                Console.WriteLine(a.Message);
+            }
+
+
+
+
 
             //marcador
             markerOverlay = new GMapOverlay("Marcador");
@@ -137,13 +182,48 @@ namespace pruebaGmaps
 
         private void BtMostrar2_Click(object sender, EventArgs e)
         {
+            int totalMujeres = 0;
+            int totalHombres = 0;
 
+
+            if (genero == 1)
+            {
+                MessageBox.Show("Hola, entré 1");
+                totalMujeres = principal.MujeresT();
+                lblMensajeTotal.Text = totalMujeres.ToString();
+            }
+            else if (genero == 2)
+            {
+                MessageBox.Show("Hola, entré 2");
+                totalHombres = principal.HombresT();
+                lblMensajeTotal.Text = totalHombres.ToString();
+            }
         }
 
         private void BtMostrar1_Click(object sender, EventArgs e)
         {
             gMapControl1.SetPositionByKeywords("Medellín, Colombia");
             //no funciona jeje
+        }
+
+        private void RbtArma1_CheckedChanged(object sender, EventArgs e)
+        {
+            arma = 1;
+        }
+
+        private void RbtArma2_CheckedChanged(object sender, EventArgs e)
+        {
+            arma = 2;
+        }
+
+        private void RbtHombres_CheckedChanged(object sender, EventArgs e)
+        {
+            genero = 2;
+        }
+
+        private void RbtMujeres_CheckedChanged(object sender, EventArgs e)
+        {
+            genero = 1;
         }
     }
 }

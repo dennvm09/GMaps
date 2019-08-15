@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Archivos\\Visual Studio\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj": {}
+    "C:\\Users\\usuario\\Desktop\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj": {}
   },
   "projects": {
-    "D:\\Archivos\\Visual Studio\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj": {
+    "C:\\Users\\usuario\\Desktop\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Archivos\\Visual Studio\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj",
         "projectName": "Modelo",
-        "projectPath": "D:\\Archivos\\Visual Studio\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj",
-        "packagesPath": "C:\\Users\\lizet\\.nuget\\packages\\",
-        "outputPath": "D:\\Archivos\\Visual Studio\\Reporte_Homicidios_Colombia_2018\\Modelo\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Desktop\\Reporte_Homicidios_Colombia_2018\\Modelo\\Modelo.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Desktop\\Reporte_Homicidios_Colombia_2018\\Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lizet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
