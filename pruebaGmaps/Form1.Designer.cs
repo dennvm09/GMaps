@@ -486,9 +486,8 @@
             this.lblMensajeTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensajeTotal.Location = new System.Drawing.Point(541, 364);
             this.lblMensajeTotal.Name = "lblMensajeTotal";
-            this.lblMensajeTotal.Size = new System.Drawing.Size(63, 25);
+            this.lblMensajeTotal.Size = new System.Drawing.Size(0, 25);
             this.lblMensajeTotal.TabIndex = 16;
-            this.lblMensajeTotal.Text = "label";
             // 
             // Form1
             // 

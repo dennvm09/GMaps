@@ -36,6 +36,7 @@ namespace pruebaGmaps
             InitializeComponent();
             principal = new Principal();
             principal.addDepartamento();
+            
         }
 
         private void GMapControl1_Load(object sender, EventArgs e)
@@ -43,6 +44,36 @@ namespace pruebaGmaps
 
         }
 
+        private void cargarCapitales()
+        {
+            StreamReader leer = new StreamReader(Path.GetFullPath("Departamentos.txt"));
+            String linea = leer.ReadLine();
+            try
+            {
+                while (linea != null)
+                {
+                    String[] elementos;
+                    elementos = linea.Split(',');
+
+                    if (elementos != null && elementos.Length == 4)
+                    {
+                        Double Lat = double.Parse(elementos[2]);
+                        Double Lng = double.Parse(elementos[3]);
+
+                        Console.WriteLine(Lat.ToString() + "," + Lng.ToString() + "Capitales");
+
+                        marker = new GMarkerGoogle(new PointLatLng(Lat, Lng), GMarkerGoogleType.red);
+                        markerOverlay.Markers.Add(marker);
+
+                    }
+                }
+            }
+            catch (Exception a)
+            {
+                Console.WriteLine(a.Message);
+            }
+
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             //Inicialización del mapa
@@ -59,7 +90,9 @@ namespace pruebaGmaps
             //marcador
             markerOverlay = new GMapOverlay("Marcador");
 
+            cargarCapitales();
 
+            /**
             StreamReader leer = new StreamReader(Path.GetFullPath("Departamentos.txt"));
             String linea = leer.ReadLine();
             try
@@ -85,7 +118,7 @@ namespace pruebaGmaps
                 Console.WriteLine(a.Message);
             }
 
-
+            //*/
 
 
 
@@ -177,7 +210,18 @@ namespace pruebaGmaps
 
         private void BtMostrar3_Click(object sender, EventArgs e)
         {
-
+            int totalArma1 = 0;
+            int totalArma2 = 0;
+            if(arma == 1)
+            {
+                totalArma1 = principal.armaBlancaT();
+                lblMensajeTotal.Text = totalArma1.ToString();
+            }
+            else if(arma == 2)
+            {
+                totalArma2 = principal.armaFuegoT();
+                lblMensajeTotal.Text = totalArma2.ToString();
+            }
         }
 
         private void BtMostrar2_Click(object sender, EventArgs e)
