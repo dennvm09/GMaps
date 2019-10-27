@@ -7,6 +7,10 @@ namespace Modelo
     public class Department
     {
         private String nameD;
+        private String capital;
+        private double latitud;
+        private double longitud;
+
         private List<Homicide> homicides;
 
         public Department(String nameD)
@@ -15,9 +19,21 @@ namespace Modelo
             homicides = new List<Homicide>();
         }
 
+        public Department(String nameD, String capital, double latitud, double longitud)
+        {
+            this.nameD = nameD;
+            this.capital = capital;
+            this.latitud = latitud;
+            this.longitud = longitud;
+
+        }
+
         public String NameD { get => nameD; set => nameD = value; }
 
         public List<Homicide> Homicides { get => homicides; set => homicides = value; }
+        public string Capital { get => capital; set => capital = value; }
+        public double Latitud { get => latitud; set => latitud = value; }
+        public double Longitud { get => longitud; set => longitud = value; }
 
         public void addHomicide(String municipality, String armaEmpleada, int age, String gender)
         {

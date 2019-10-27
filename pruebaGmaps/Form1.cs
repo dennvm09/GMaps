@@ -25,6 +25,7 @@ namespace pruebaGmaps
 
         GMarkerGoogle marker;
         GMapOverlay markerOverlay;
+        GMapOverlay gmapDepartment;
 
         double LatInicial = 4.570868;
         double LonInicial = -74.2973328;
@@ -36,14 +37,36 @@ namespace pruebaGmaps
             InitializeComponent();
             principal = new Principal();
             principal.addDepartamento();
-            
+            principal.latLonDepartments();
         }
 
         private void GMapControl1_Load(object sender, EventArgs e)
         {
+            map.SetPositionByKeywords("Bogotá,Colombia");
+            map.DragButton = MouseButtons.Left;
+            map.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
 
         }
 
+
+        private void mostrarDepartamentos()
+        {
+            MessageBox.Show("Holaaaa, pude entrar al método de mostrar departamentos");
+            foreach (var aux in principal.Departments)
+            {
+                
+                gmapDepartment = new GMapOverlay("marker");
+                GMarkerGoogle mark = new GMarkerGoogle(new GMap.NET.PointLatLng(aux.Latitud, aux.Longitud), GMarkerGoogleType.yellow_small);
+                gmapDepartment.Markers.Add(mark);
+
+                mark.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+                mark.ToolTipText = String.Format("Departamento: " + aux.NameD + "\n" + "Capital: " + aux.Capital + "\n" + "Latitud: " + aux.Latitud + "\n" + "Longitud: " + aux.Longitud);
+                mark.ToolTip.TextPadding = new Size(10, 10);
+
+                map.Overlays.Add(gmapDepartment);
+            }
+        }
         private void cargarCapitales()
         {
             StreamReader leer = new StreamReader(Path.GetFullPath("Departamentos.txt"));
@@ -77,20 +100,20 @@ namespace pruebaGmaps
         private void Form1_Load(object sender, EventArgs e)
         {
             //Inicialización del mapa
-            gMapControl1.DragButton = MouseButtons.Left;
-            gMapControl1.CanDragMap = true;
-            gMapControl1.MapProvider = GMapProviders.GoogleMap;
-            gMapControl1.Position = new PointLatLng(LatInicial, LonInicial);
-            gMapControl1.MinZoom = 0;
-            gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 7;
-            gMapControl1.AutoScroll = true;
+            map.DragButton = MouseButtons.Left;
+            map.CanDragMap = true;
+            map.MapProvider = GMapProviders.GoogleMap;
+            map.Position = new PointLatLng(LatInicial, LonInicial);
+            map.MinZoom = 0;
+            map.MaxZoom = 24;
+            map.Zoom = 7;
+            map.AutoScroll = true;
 
 
             //marcador
             markerOverlay = new GMapOverlay("Marcador");
 
-            cargarCapitales();
+            //cargarCapitales();
 
             /**
             StreamReader leer = new StreamReader(Path.GetFullPath("Departamentos.txt"));
@@ -130,15 +153,15 @@ namespace pruebaGmaps
             marker.ToolTipMode = MarkerTooltipMode.Always;
             marker.ToolTipText = string.Format("Ubicación: \n Latitud:{0} \n Longitud:{1}", LatInicial, LonInicial);
 
-            gMapControl1.Overlays.Add(markerOverlay);
+            map.Overlays.Add(markerOverlay);
 
 
         }
 
         private void GMapControl1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            double lat = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
-            double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
+            double lat = map.FromLocalToLatLng(e.X, e.Y).Lat;
+            double lng = map.FromLocalToLatLng(e.X, e.Y).Lng;
 
             marker.Position = new PointLatLng(lat, lng);
 
@@ -167,6 +190,8 @@ namespace pruebaGmaps
             paneOpcion1.Visible = true;
             paneOpcion2.Visible = false;
             paneOpcion3.Visible = false;
+
+            
         }
 
         private void RbtOpcion2_CheckedChanged(object sender, EventArgs e)
@@ -215,12 +240,12 @@ namespace pruebaGmaps
             if(arma == 1)
             {
                 totalArma1 = principal.armaBlancaT();
-                lblMensajeTotal.Text = totalArma1.ToString();
+                lblMensajeTotal.Text = "Total asesinados por arma blanca: \n" + totalArma1.ToString();
             }
             else if(arma == 2)
             {
                 totalArma2 = principal.armaFuegoT();
-                lblMensajeTotal.Text = totalArma2.ToString();
+                lblMensajeTotal.Text = "Total asesinados por arma de fuego: \n" + totalArma2.ToString();
             }
         }
 
@@ -229,24 +254,22 @@ namespace pruebaGmaps
             int totalMujeres = 0;
             int totalHombres = 0;
 
-
+            
             if (genero == 1)
             {
-                MessageBox.Show("Hola, entré 1");
                 totalMujeres = principal.MujeresT();
-                lblMensajeTotal.Text = totalMujeres.ToString();
+                lblMensajeTotal.Text = "Total mujeres asesinadas: \n"+totalMujeres.ToString();
             }
             else if (genero == 2)
             {
-                MessageBox.Show("Hola, entré 2");
                 totalHombres = principal.HombresT();
-                lblMensajeTotal.Text = totalHombres.ToString();
+                lblMensajeTotal.Text = "Total hombres asesinados: \n" + totalHombres.ToString();
             }
         }
 
         private void BtMostrar1_Click(object sender, EventArgs e)
         {
-            gMapControl1.SetPositionByKeywords("Medellín, Colombia");
+            map.SetPositionByKeywords("Medellín, Colombia");
             //no funciona jeje
         }
 
@@ -268,6 +291,11 @@ namespace pruebaGmaps
         private void RbtMujeres_CheckedChanged(object sender, EventArgs e)
         {
             genero = 1;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            mostrarDepartamentos();
         }
     }
 }

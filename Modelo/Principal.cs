@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 
@@ -8,16 +9,87 @@ namespace Modelo
     public class Principal
     {
         private List<Department> listDepartments;
+        private List<Department> departments;
         private Department departamento;
-      
+
 
         public Principal()
         {
+            departments = new List<Department>();
             listDepartments = new List<Department>();
-            departamento = null; 
+            departamento = null;
         }
 
         public List<Department> ListDepartments { get => listDepartments; set => listDepartments = value; }
+        public List<Department> Departments { get => departments; set => departments = value; }
+
+        public void latLonDepartments()
+        {
+            StreamReader leer = new StreamReader(Path.GetFullPath("Departamentos.txt"));
+            String line = leer.ReadLine();
+
+            try
+            {
+                while(line != null)
+                {
+                    String[] element;
+                    element = line.Split(',');
+
+                    String departamento = "";
+                    String capital = "";
+                    double latitud = 0;
+                    double longitud = 0;
+
+                    if (element != null && element.Length == 4)
+                    {
+                        if(element[0] != null)
+                        {
+                            departamento = element[0];
+                            Console.WriteLine(departamento);
+                        }
+
+                        if (element[1] != null)
+                        {
+                            capital = element[1];
+                            Console.WriteLine(capital);
+                        }
+
+                        if (element[2] != null)
+                        {
+                            latitud = Double.Parse(element[2], CultureInfo.InvariantCulture);
+                            Console.WriteLine(latitud);
+                        }
+
+                        if (element[3] != null)
+                        {
+                            longitud = Double.Parse(element[3], CultureInfo.InvariantCulture);
+                            Console.WriteLine(longitud);
+                        }
+
+                        
+
+
+                        Department depar = new Department(departamento, capital, latitud, longitud);
+
+                        departments.Add(depar);
+
+                 
+                    }
+
+                    line = leer.ReadLine();
+
+                    
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+
+
+
 
         public void addDepartamento()
         {
@@ -36,35 +108,35 @@ namespace Modelo
                         if (element[1] != null)
                         {
                             departamento = element[1];
-                            Console.WriteLine(departamento);
+                            
                         }
 
                         String municipio = "";
                         if (element[2] != null)
                         {
                             municipio = element[2];
-                            Console.WriteLine(municipio);
+                           
                         }
 
                         String armaEmpleada = "";
                         if (element[8] != null)
                         {
                             armaEmpleada = element[8];
-                            Console.WriteLine(armaEmpleada);
+                            
                         }
 
                         int edad = 0;
                         if (element[11] != null)
                         {
                             edad = Convert.ToInt32(element[11]);
-                            Console.WriteLine(edad);
+                            
                         }
 
                         String genero = "";
                         if (element[12] != null)
                         {
                             genero = element[12];
-                            Console.WriteLine(genero);
+                            
                         }
 
                         agregarD(departamento, municipio, armaEmpleada, edad, genero);
@@ -79,6 +151,13 @@ namespace Modelo
             }
         }
 
+
+
+        public void agregarDep(String dep, String cap, double lat, double lon)
+        {
+            Department nuevoD = new Department(dep, cap, lat, lon);
+
+        }
 
         public void agregarD(String departamento, String municipio, String armaEmpleada, int edad, String genero)
         {
